@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*
+{"box-sizing:  border:box;"
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;background-color: black;
+}
+
+/* Style the header */
+header {
+  background-color:red;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: blue;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 210px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 100%;
+  background-color: green;
+  text-align: center;
+  height: 30px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content:"";
+  display: table;
+  clear: both;
+}
+
+.city{
+  background-color: tomato;
+  color: white;
+  border: 2px solid black ;
+  margin: 10px;
+  padding: 10px;
+}
+
+#myheader {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+
+/* Style the footer */
+footer {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  color: red;
+  margin-bottom: 10px;
+  margin-top: 90px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>MY PRACTICE</h2>
+</header>
+
+<section> <img src="love.jpg" alt="love image" width="400" height="250" style="float:center"> <img src="training.jpg" alt="training" width="493" height="250" style="float:right">
+  <nav>
+    <ul>
+      <li>Welcome to my page</li>
+      <li><a href="hhtps://www.google.com/">visit google.com</a></li>
+      <li>Login</li>
+      <li>Settings</li>
+      <li>Privacy policy</li>
+      <li>Exit</li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1><b></h1>
+    <p></p>
+
+</section>
+<div class="city">
+  <h2>london</h2>
+  <p>london is the capital of England.</p>
+</div>
+
+<div class="city">
+  <h2>paris</h2>
+  <p>paris is the capital of france</p>
+</div>
+<div class="city">
+  <h2>lagos</h2>
+  <p>lagos is the capital of Nigeria</p>
+</div>
+<h2 id="myheader">I love playing video games</h2>
+<h3 id="myheader">i love my country[NIGERIA]</h3>
+<h4>HTML Iframes</h2>
+  <iframe src="demo_iframe.htm"
+  height="200" width="300"
+  title="Iframe Example"></iframe>
+
+<footer>
+  <p>you can contact me through my gmail account   <img src="google logo.jpg" alt="google logo" width="25" height="25"</p>
+  <p>or call:08054278283</p>
+
+</footer>
+
+</body>
+</html>
